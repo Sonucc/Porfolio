@@ -1,0 +1,298 @@
+
+    
+    /* navigation bar */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh; /*view port height */
+    background-color: white;
+    position: relative; 
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-left: 100px;
+    align-items: center;
+}
+
+.logo{
+    width: 130px; /* align image size */
+}
+
+.listitem{
+    display: inline-block; /* align the list in horizontal line */
+    list-style: none; /* to remove the bullet points if it doesnt go */
+    margin: 10px 20px;/* adjust the space btm list */
+}
+
+
+.link{
+    color: black;
+    text-decoration: none;/* to remove the underline */
+    font-weight: bold;/* making the font bold */
+}
+
+.link:hover{          /* mouse over adjutment */ /* known as pseudo classes */ /* hover means when mouse over the text */
+    color: red;
+}
+
+
+
+/* HOme */
+
+
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+
+.title_h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: Times New Roman, Times, serif;
+    
+}
+
+#lastname{
+    color: rgb(232, 158, 11);
+    font-size: 50px;
+    font-weight: 800px;
+}
+
+.download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px,20px;
+    margin: 30px,0;
+    display: inline-block;
+    border-radius: 5px;  /* curvy box */
+    font-weight: bold;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+.images img{
+    position: absolute;
+    height: 100%;
+    left: 50%;   /* LEFT AND BOTTOM IS GIVEN, TO SET A POSITION */
+    bottom: 0%;
+    transform: translateX(-50%);/* TO REMOVE THE SCROLL IN X AXIS */
+    transition: bottom 1s, left 1s;    /* soft movement */
+}
+
+
+.images:hover #shape{    /* moving the shape when mouse over */
+    bottom: 70px;
+}
+
+.images:hover #girl{    /* moving the girl when mouse over */
+    left: 40%;
+}
+
+
+/* next section */
+
+#about{
+    margin: 15% 8% 0px 8%;
+}
+
+.heading{
+    text-align: center;
+}
+
+.headig h2{
+    font-size: 30px;
+}
+
+.heading span{
+    font-size: 20px;
+    color: green;
+}
+
+.about-content{
+    margin-top: 2rem; /* rem is new unit.  1rem=16px */
+    display: grid; /* to place items as grid */
+    grid-template-columns: repeat(2 , 1fr);  /* to arrange the gird */
+    gap: 2rem;   /* adjust the gap btwn grids */
+    
+}
+
+.about-img img{
+    width: 80%;
+    border-radius: 1rem;
+}
+
+.about-details{
+    font-size: 19px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.information{
+    margin-top: 1.5rem;
+}
+
+.info-box{
+    margin-bottom: 1rem;
+
+}
+
+.info-box span{
+    margin-left: 1rem;
+}
+
+#skills{
+    margin: 8% 8% 0px 8%;
+}
+
+
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-img img{
+    width: 90%;
+    padding-left: 2rem;
+    
+}
+
+html{
+    scroll-behavior: smooth; /* smoothness */
+}
+
+.bar-container{
+    display: flex; /* same line */
+    justify-content: space-between; /* add space btwn */
+    align-items: center;
+    padding: 1rem 0px;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.bar-container h3, span{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.html-bar{
+    background-color: rgb(255, 208, 0);
+    width: 95%;
+}
+
+.css-bar{
+    background-color: rgb(255, 208, 0);
+    width: 88%;
+}
+
+.react-bar{
+    background-color: rgb(255, 208, 0);
+    width: 89%;
+}
+
+.js-bar{
+    background-color: rgb(255, 208, 0);
+    width: 85%;
+}
+
+
+
+/* ...........next.................... */
+
+
+.icon-set{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;  /* horizontally arrange center */
+    align-items: center;   /* vertically arrange center */
+    /* to align item exact centre apply display justify and align  */
+
+}
+
+.icon, .up-arrow{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid black; */
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+}
+
+.icon i{
+    font-size: 30px;
+    color: black;
+}
+
+.icon:hover{
+    background-image: linear-gradient(to top left, rgb(248, 25, 0), yellow);
+}
+
+.icon:hover i{
+    color: white;
+    animation: shake 0.75s;  /* animation */
+
+}
+
+@keyframes shake{    /* animation */   /* keyframes */
+
+    10%{
+        transform: rotate(15deg);
+    }
+
+    20%{
+        transform: rotate(-15deg);
+    }
+
+    30%{
+        transform: rotate(15deg);
+    }
+
+    40%{
+        transform: rotate(-15deg);
+    }
+
+
+}
+
+footer{
+    margin: 3rem 0px;
+}
+
+.up-arrow{
+    float: right;  /* set to right */
+    margin: 0px 10px 50px 0px;
+    background-image: linear-gradient(to top left, rgb(248, 25, 0), yellow);
+}
+
+.up-arrow:hover i{
+    color: white;
+}
